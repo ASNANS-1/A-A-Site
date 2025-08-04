@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Phantom Series</title>
     <style>
     body
     {
-        background-color: rgb(39, 36, 36)
+        font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
     }
     .box 
     {
         background-color: rgb(63, 59, 59);
         margin: 20px;
         border-radius: 20px;
-        width: auto;
+        width: 300px;
         text-align: center;
         padding: 10px;
         margin-top: 20px;
-        display: flex;
-        gap: 20px;
+        
     }
-    .boxs
+    .list li
     {
+        margin: 10px;
+        margin-top: 30px;
        padding: 10px;
-       
+       display: flex;
+       background-color: #333;
+       border-radius: 10px;
+       border-color: white;
+       border-width: 10px;
+       box-shadow: 4px 5px 10px rgb(24, 24, 24);
+       transition: box-shadow 0.3s ease;
+    }
+    .list li:hover 
+    {
+        box-shadow: 4px 5px 10px rgb(17, 17, 17);
+    }
+
+    .list a 
+    {
+        background-color: aqua;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 12px 24px;
+        color: black;
+        transition: background-color 0.3s;
+    }
+    .list a:hover 
+    {
+        background-color: rgb(0, 158, 158);
+    }
+    .list p
+    {
+        padding: 10px;
+        font-size: 25px;
     }
     .control 
     {
-        background-color: lightgray;
+        
         max-width: 1000px;
         border-radius: 10px;
+        margin: 10px;
+        display: flex;
         
     }
     .inbox
     {
         display: flex;
+    }
+    header
+    {
+        background-color: #333;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
     }
     </style>
     <meta charset="UTF-8">
@@ -40,22 +85,27 @@
     <title>Phantom Series</title>
 </head>
 <body>
+    <header>Phantom</header>
     <div  class="control">
-        <div  class="boxs">
-                       <div  class="box">
-                        <h2>Phantom v(0.0.1)</h2>
-                        <p>pre-alpha</p>
-                        <a href="0.0.1.rar" style="padding: 20px;" >Download</a>
-                       </div>
-                       <div  class="box">
-                        <h2>Phantom v(0.1.0)</h2>
-                        <p  style=" padding: 20px;">alpha
-                            <a href="0.1.1.rar" style="padding: 20px;">Download</a>
-                        </p>
-                        
-                       </div>
-                     
-    </div>
+        <ul class="list">
+            <li class="inlist">
+                <img src="Zombi_Hed.png" alt="Zombi_pictuer">
+                <div>
+                    <p>Phantom v(0.0.1)</p>
+                    
+                    <a href="0.0.1.rar">Download</a>
+                </div>
+            </li>
+            <li>
+                <img src="Zombi_Hed.png" alt="Zombi_pictuer">
+                <div>
+                    <p>Phantom v(0.1.1)</p>
+                    
+                    <a href="0.1.1.rar">Download</a>
+                </div>
+            </li>
+            
+        </ul>
     </div>
 
 
