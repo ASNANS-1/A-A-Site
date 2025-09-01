@@ -19,6 +19,14 @@
             font-size: 24px;
             font-weight: bold;
         }
+         footer {
+            background-color: black;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            
+            
+        }
         .container {
             max-width: 1000px;
             margin: auto;
@@ -35,20 +43,70 @@
             padding: 15px;
             border-radius: 10px;
         }
-        a {
+        .container a {
             color: #4CAF50;
             text-decoration: none;
         }
-        a:hover {
+        .container a:hover {
             text-decoration: underline;
         }
         
+        .menu-icon
+        {
+            font-size: 40px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            color: white;
+            transform: rotate(rotate deg);
+        }
+        .menu-icon:hover
+        {
+            transform: rotate(180deg);
+        }
+        .dropdown
+        {
+            font-family: Arial,sans-serif;
+            font-size:large;
+            display: none;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            top: 45px;
+            right: 15px;
+            border: 1px solid #ccc;
+            background-color: rgb(53, 53, 53);
+            border-radius: 5px;
+        }
+        .dropdown a 
+        {
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
-<body>
-    <header>A&A Site</header>
+<body onclick="closetogglemenu()">
+    <header>
+        A&A Site
+        <div class="menu-icon" onclick="toggleMenu()" id="ro" title="hi">⁝</div>
+
+        <div class="dropdown" id="menu">
+            
+            
+            <a href="Phantom.html">Phantom</a>
+            <a href="Ball Cool     (V 0.1.1).rar">Ball cool</a>
+            <a href="">What is this , dont black your face</a>
+            
+        </div>
+        <div id="text"></div>
+    </header>
+    
     <div class="container">
-        <h2>Projects & Assets</h2>
+        <h2>Some Games</h2>
         <div class="projects">
             <div class="project">
                 <h3>Assaults Weapons</h3>
@@ -62,10 +120,31 @@
             </div>
             <div class="project">
                 <h3>Ball cool</h3>
-                <p>But not cool Super ugly Game</p>
+                <p>But not cool ,Super ugly Game</p>
                 <a href="Ball Cool     (V 0.1.1).rar">Download</a>
             </div>  
         </div>
     </div>
+    <div style="background-color: #1e1e1e; position: absolute; bottom: 10px; color: #1e1e1e;">OHH MY GASH YOU FIND ME</div>
+    <script>
+    var menu = document.getElementById("menu");
+        function toggleMenu() {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+    let rotate = 0;
+    setInterval(function (){
+        rotate = rotate + 10;
+        document.getElementById("ro").style = "transform: rotate(" +rotate+"deg);"
+    } , 100)
+  </script>
 </body>
+<footer>
+    <p>
+        Send feedback to make this page or Games more better on this Email : <q>anaastaha2012@gmail.com</q>
+    </p>
+</footer>
 </html>
